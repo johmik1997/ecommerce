@@ -1,5 +1,5 @@
 <template>
-    <div class="grid h-16 place-items-center">
+    <div class="grid h-s place-items-center">
 
         <div class="p-4 border" id="checkout-page">
                 <!-- Display a payment form -->
@@ -14,10 +14,8 @@
                 <div id="payment-message" class="hidden"></div>
                 </form>
         </div>
-
     </div>
 </template>
-
 <script setup>
     const config = useRuntimeConfig()
     const {stripePK} = config.public
@@ -75,7 +73,7 @@
             elements,
             confirmParams: {
             // Make sure to change this to your payment completion page
-            return_url: "https://shopiversee.netlify.app/payment-success",
+            return_url: "http://localhost:3000/paymentSucsses",
             },
         });
 
