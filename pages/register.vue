@@ -208,7 +208,7 @@
             full_name: form.fullName,
             address: form.address
           },
-          emailRedirectTo: `${window.location.origin}/confirm`
+          emailRedirectTo: `$https://ecommercegebeya.netlify.app/confirm`
         }
       })
   
